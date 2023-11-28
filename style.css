@@ -1,6 +1,7 @@
 :root {
     --main-fs: 1.6rem;
     --average-fs: 1.1rem;
+    --little-fs: 1rem;
 
     --body-color: #edf2fb;
 
@@ -12,7 +13,8 @@
     --advantages-bg-color: #68d8d6;
 
     --main-fw: 700;
-    --average-fw: 400:
+    --average-fw: 400;
+    --little-fw: 300;
     
 }
 
@@ -61,18 +63,29 @@ body{
 .community-component{
    grid-area: header;
    background: var(--initial-color);
-   padding: 1.5rem;
+   padding: 1.8rem 1.6rem;
 }
 
 .head-title{
     font-size: var(--main-fs);
     font-weight: var(--main-fw);
     color: var(--subscribe-bg-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .quarantee-text{
     color: var(--accent-color);
+    font-weight: var(--main-fw);
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.little-text-community{
+    font-size: var(--little-fs);
+    font-weight: var(--average-fw);
+    color: var(--dark-color);
+    letter-spacing: .4px;
+    opacity: .5;
 }
 
 .subscribe-component{
