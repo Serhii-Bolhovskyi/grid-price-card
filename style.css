@@ -1,6 +1,6 @@
 :root {
     --main-fs: 1.6rem;
-    --average-fs: 1.1rem;
+    --average-fs: 1.2rem;
     --little-fs: 1rem;
 
     --body-color: #edf2fb;
@@ -16,7 +16,7 @@
     --average-fw: 400;
     --little-fw: 300;
 
-    --main-padding: 1.8rem 1.6rem;
+    --main-padding: 1.8rem 1.4rem;
     
 }
 
@@ -146,11 +146,30 @@ button:hover{
     transition: .6 ease-out;
 }
 
+/* advantages-component */
+
 .advantages-component{
     grid-area: sidebar;
     background: var(--advantages-bg-color);
     padding: var(--main-padding);
 }
 
+.advantages-component ul{
+    display: grid;
+    margin: 20px 0;
+    gap: 3px;
+}
+
+@media  screen and (max-width: 700px) {
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "header header header"
+        "main main main "
+        "sidebar sidebar sidebar" ;
+         margin: 40px 20px;
+         text-align: center;
+    }
+}
 
 
