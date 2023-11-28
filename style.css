@@ -1,0 +1,66 @@
+:root {
+    --main-fs: 1.8rem;
+    --average-fs: 1.1rem;
+
+    --body-color: #edf2fb;
+
+    --initial-color: #ffffff;
+    --dark-color: #1e1e1e;
+    --accent-color: #70c72a;
+
+    --subscribe-bg-color: #07beb8;
+    --advantages-bg-color: #68d8d6;
+
+    --padding: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background: var(--body-color) ;
+}
+
+.grid-container{
+    max-width: 600px;
+    display: grid;
+    margin-inline: auto;
+    margin-top: 40px;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-areas:
+    "header header header header"
+    "main main sidebar sidebar" ;
+} 
+
+.community-component{
+   grid-area: header;
+   background: var(--initial-color);
+   padding: var(--padding);
+}
+
+.subscribe-component{
+    grid-area: main;
+    background: var(--subscribe-bg-color);
+    padding: var(--padding);
+}
+
+.advantages-component{
+    grid-area: sidebar;
+    background: var(--advantages-bg-color);
+    padding: var(--padding);
+}
+
+
+
