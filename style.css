@@ -1,5 +1,5 @@
 :root {
-    --main-fs: 1.8rem;
+    --main-fs: 1.6rem;
     --average-fs: 1.1rem;
 
     --body-color: #edf2fb;
@@ -11,8 +11,12 @@
     --subscribe-bg-color: #07beb8;
     --advantages-bg-color: #68d8d6;
 
-    --padding: 20px;
+    --main-fw: 700;
+    --average-fw: 400:
+    
 }
+
+/* basic style */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,6 +33,8 @@ ul, li{
     list-style-type: none;
 }
 
+/* general styles */
+
 body{
     background: var(--body-color) ;
 }
@@ -44,22 +50,41 @@ body{
     "main main sidebar sidebar" ;
 } 
 
+.basic-middle-text{
+    font-size: var(--average-fs);
+    font-weight: var(--average-fw);
+    color: var(--initial-color);
+}
+
+/* community component */
+
 .community-component{
    grid-area: header;
    background: var(--initial-color);
-   padding: var(--padding);
+   padding: 1.5rem;
+}
+
+.head-title{
+    font-size: var(--main-fs);
+    font-weight: var(--main-fw);
+    color: var(--subscribe-bg-color);
+    margin-bottom: 20px;
+}
+
+.quarantee-text{
+    color: var(--accent-color);
 }
 
 .subscribe-component{
     grid-area: main;
     background: var(--subscribe-bg-color);
-    padding: var(--padding);
+    padding: 1.5rem;;
 }
 
 .advantages-component{
     grid-area: sidebar;
     background: var(--advantages-bg-color);
-    padding: var(--padding);
+    padding: 1.5rem;;
 }
 
 
